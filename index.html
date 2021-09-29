@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Radar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>RADAR</h1>
+        <div class="row text-center justify-content-center">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="distance-input">Distance</label>
+                        <input type="number" class="form-control" placeholder="Input distance to point" id="distance-input" required min=0 max=20000>
+                        <span class="form__error">Здесь должно быть положительное число от 0 до 20000!</span>
+                        <label for="angle-input">Angle</label>
+                        <input type="number" class="form-control" placeholder="Input angle to point" id="angle-input" required>
+                        <span class="form__error">Здесь должно быть число!</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p id="radius"></p>
+        <div class="row justify-content-center" id="btn_container"></div>
+        <div class="row justify-content-center" id="canvas_container"></div>
+        <div id="scale_btn_containers"></div>
+    </div>
+
+    <footer style="background-color: black;color:white; font-family:Arial, Helvetica, sans-serif;">
+        <div class="container" >
+            <p>Made by ARU student Ali Aidan</p>
+        </div>
+    </footer>
+
+
+    <script src="js/p5.min.js"></script>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
